@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quiet Space - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">My Quiet Space</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Quiet Space</h1>
+            <p>Ek khamosh si kahani, thode alfaaz, kuch ehsaas...</p>
+            <a href="blog.html" class="btn">Read My Thoughts →</a>
+        </div>
+    </section>
+
+    <!-- Latest Posts Section -->
+    <section class="posts">
+        <h2 class="section-title">Latest Thoughts</h2>
+        <div class="posts-container">
+            <!-- Post 1 - LINK UPDATED -->
+            <article class="post-card">
+                <div class="post-image">
+                    <img src="images/post1.jpg" alt="Introvert blog post">
+                </div>
+                <div class="post-content">
+                    <span class="post-date"><i class="far fa-calendar"></i> March 3, 2024</span>
+                    <h3>Aaj phir sochta hoon...</h3>
+                    <p>Kabhi kabhi akela rehna accha lagta hai. Apne saath, apni duniya mein, kuch pal sirf apne liye...</p>
+                    <!-- Ab post1-introvert.html open hoga -->
+                    <a href="post/introvert.html" class="read-more">Continue Reading <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Post 2 - LINK UPDATED -->
+            <article class="post-card">
+                <div class="post-image">
+                    <img src="images/post2.jpg" alt="Chai blog post">
+                </div>
+                <div class="post-content">
+                    <span class="post-date"><i class="far fa-calendar"></i> February 28, 2024</span>
+                    <h3>Wo khamoshi</h3>
+                    <p>Khamoshi bhi boht kuch kehti hai, bas sunne ka dil chahiye. Aur main har baar sun leta hoon...</p>
+                    <!-- Ab post2-chai.html open hoga -->
+                    <a href="post/chai.html" class="read-more">Continue Reading <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Post 3 - LINK UPDATED -->
+            <article class="post-card">
+                <div class="post-image">
+                    <img src="images/post3.jpg" alt="Raat blog post">
+                </div>
+                <div class="post-content">
+                    <span class="post-date"><i class="far fa-calendar"></i> February 15, 2024</span>
+                    <h3>Khud se mulaqaat</h3>
+                    <p>Aaj apne aap se milne ka mann hai. Chai ho, thandi hawa, aur kuch silent moments apne saath...</p>
+                    <!-- Ab post3-raat.html open hoga -->
+                    <a href="post/raat.html" class="read-more">Continue Reading <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+        
+        <!-- View All Posts Button - NEW ADDITION -->
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="blog.html" class="btn" style="background: var(--primary); color: white; border: none;">View All Posts <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>My Quiet Space</h3>
+                <p>Ek introvert ki duniya, thode alfaazon mein.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 My Quiet Space. All rights reserved.</p>
+            <p>Made with <i class="fas fa-heart"></i> for all the introverts</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
