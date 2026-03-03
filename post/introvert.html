@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introvert Hoon Main - My Quiet Space</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Post Page Specific Styles */
+        .post-page {
+            padding: 8rem 5% 5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .post-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .post-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .post-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .post-meta i {
+            color: var(--secondary);
+            margin-right: 0.3rem;
+        }
+        
+        .featured-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .post-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+        
+        .post-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .post-content h2 {
+            margin: 2rem 0 1rem;
+            color: var(--primary);
+        }
+        
+        .post-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 5px;
+            transition: var(--transition);
+        }
+        
+        .back-btn:hover {
+            background: var(--primary-light);
+            transform: translateX(-5px);
+        }
+        
+        .share-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .share-buttons a {
+            width: 40px;
+            height: 40px;
+            background: var(--light);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .share-buttons a:hover {
+            background: var(--secondary);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .featured-image {
+                height: 250px;
+            }
+            
+            .post-footer {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">My Quiet Space</div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Post Content -->
+    <article class="post-page">
+        <div class="post-header">
+            <h1>Introvert Hoon Main</h1>
+            <div class="post-meta">
+                <span><i class="far fa-calendar"></i> March 3, 2024</span>
+                <span><i class="far fa-clock"></i> 5 min read</span>
+                <span><i class="far fa-heart"></i> 24 likes</span>
+            </div>
+        </div>
+
+        <!-- Cover Image (Unsplash se download karo) -->
+        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1200" alt="Introvert" class="featured-image">
+
+        <div class="post-content">
+            <p><em>Log kehte hain - "Itna kam kyun bolte ho?", "Party mein kyun nahi aate?", "Milte julte kyun nahi?"</em></p>
+            
+            <p>Par unhe kya pata... main apni duniya mein kitna khush hoon. Chai ki pyali, ek acchi kitaab, aur meri apni sochein - bas yahi meri duniya hai.</p>
+            
+            <h2>Introvert hona kya hai?</h2>
+            
+            <p>Introvert hona koi bimari nahi, yeh ek personality hai. Hum soche samjhe bolte hain, hum observers hain, hum apne aap mein complete hain. Bahar ki duniya mein shor hai, lekin humein sukoon milta hai andar ki khamoshi mein.</p>
+            
+            <p>Jab log party karte hain, hum ek kitaab ke saath time spend karte hain. Jab log group mein baatein karte hain, hum ek do logon ke saath gehri baatein karte hain. Jab log social media pe busy hain, hum apne khayalon mein khoye rehte hain.</p>
+            
+            <h2>Meri khamoshi, meri taakat</h2>
+            
+            <p>Dheere dheere maine samjha - yeh khamoshi hi meri taakat hai. Main dekh sakta hoon jo log nahi dekh pate. Main sun sakta hoon jo awaazein log nahi sun pate. Main mehsoos kar sakta hoon woh cheezein jo log ignore kar dete hain.</p>
+            
+            <p>Aaj itna hi. Phir milenge apni isi quiet space mein. 👋</p>
+            
+            <div style="background: var(--light); padding: 2rem; border-radius: 10px; margin: 2rem 0;">
+                <p style="font-style: italic; margin: 0;"><i class="fas fa-quote-left" style="color: var(--secondary); margin-right: 10px;"></i> 
+                Khamoshi mein bhi ek awaaz hoti hai, bas sunne wala chahiye.
+                </p>
+            </div>
+        </div>
+
+        <div class="post-footer">
+            <a href="../blog.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+            
+            <div class="share-buttons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>My Quiet Space</h3>
+                <p>Ek introvert ki duniya, thode alfaazon mein.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 My Quiet Space. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
